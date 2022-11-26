@@ -1,0 +1,671 @@
+<%- include('partials/header') %>  
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <b>INSTRUCTIONS<br><br>1. For each question, choose the options based on how often it applies to you in general, during the last year or two.
+                        <br>2. Work quickly, without bothering to check your answers, and be careful to describe your life in the long run.</b>
+                    </div>
+                </div>
+                <br>
+            <form action="/questionnaire" method="POST">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel rested</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AA" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AA" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AA" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AA" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel too many demands are being made on you</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AB" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AB" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AB" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AB" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You are irritable or grouchy</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AC" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AC" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AC" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AC" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have too many things to do</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AD" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AD" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AD" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AD" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel lonely or isolated</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AE" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AE" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AE" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AE" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You find yourself in situation of conflict</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AF" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AF" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AF" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AF" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel you are doing things you like</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AG" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AG" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AG" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AG" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel tidodgerblue</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AH" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AH" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AH" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AH" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel you may not achieve you goal</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AI" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AI" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AI" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AI" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel calm</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AJ" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AJ" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AJ" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AJ" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have too many decisions to make</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AK" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AK" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AK" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AK" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You are frustrated</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AL" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AL" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AL" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AL" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You are full of energy</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AM" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AM" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AM" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AM" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel tense</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AN" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AN" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AN" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AN" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You problems are piling up</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AO" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AO" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AO" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AO" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel you are in a hurry</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AP" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AP" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AP" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AP" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have too many things to do</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AQ" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AQ" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AQ" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AQ" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have many worries</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AR" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AR" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AR" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AR" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have many pressures from others</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AS" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AS" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AS" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AS" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel discouraged</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AT" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AT" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AT" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AT" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You enjoy yourself</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AU" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AU" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AU" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AU" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You are afraid of future</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AV" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AV" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AV" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AV" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel you are doing because you have to not because you want to</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AW" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AW" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AW" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AW" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel criticized or judged</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AX" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AX" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AX" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AX" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You are lighthearted</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AY" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AY" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AY" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AY" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel mentally exhausted</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AZ" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AZ" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AZ" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="AZ" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have trouble relaxing</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BA" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BA" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BA" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BA" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You feel loaded down with responsibility</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BB" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BB" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BB" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BB" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You have enough time for yourself</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BC" value="4"><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BC" value="3"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BC" value="2"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BC" value="1" required><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">You fell under pressure from deadlines</h5>
+                    </div>
+                    <div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BD" value="1" required><span>Almost</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BD" value="2"><span>Sometimes</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BD" value="3"><span>Often</span>
+                    </label>    
+                    </div><div class="ans ml-2">
+                    <label class="radio"><input type="radio" name="BD" value="4"><span>Usually</span>
+                    </label>    
+                    </div>
+                </div>
+                <br>
+            </div>
+            <button type="submit" id="myBtn" class="btn btn-primary btn-block" style="background-color:dodgerblue; text-align: center">
+                Submit
+            </button>
+        </form>
+        </div>
+    </div>
+</div>
+<style>
+    body{
+    background-color:#eee;
+}
+
+label.radio {
+  cursor: pointer;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  padding: 4px 0px;
+  border: 1px solid dodgerblue;
+  display: inline-block;
+  color: dodgerblue;
+  width: 100px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+label.radio input:checked + span {
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.ans {
+  margin-left: 36px !important;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.btn:active {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+</style>
+<%- include('partials/footer') %>  

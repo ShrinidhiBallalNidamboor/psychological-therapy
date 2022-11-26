@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<div class="container">
+
+    <h3>Your patients</h3>
+    <div class="row mt-5">
+        <% therapyList.forEach(therapy => {%>
+            <div class="col-lg-4 col-md-6 pb-4">
+                <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="/therapy-doctor?patientId=<%= therapy.PatientId  %> ">
+                    <img class="img-fluid" src="img/patient-logo.webp" alt="">
+                    <div class="courses-text">
+                        <!-- <h4 class="text-center text-white px-3">Web design & development Activities for
+                            beginners</h4> -->
+                        <div class="border-top w-100 mt-3">
+                            <div class="d-flex justify-content-center p-4">
+                                <span class="text-white"><i class="fa fa-user mr-2"></i><%= therapy.PatientName %></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <% }) %> 
+
+    </div>
+</div>
+
+
+<%- include('partials/footer') %>

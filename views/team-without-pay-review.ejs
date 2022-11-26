@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative mb-5">
+            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Doctors</h6>
+            <h1 class="display-4">Meet Our Doctors</h1>
+        </div>
+        <div class="row">
+        <%for(let i=0;i!=doctor.length;i++){ console.log(doctor[i])%>
+            <div class="col-lg-4 col-md-6 pb-4" style="box-shadow: 5px 5px 10px lightgray;">
+                <a class="courses-list-item position-relative d-block overflow-hidden mb-2" style="text-decoration: none;" href="/team">
+                    <img class="img-fluid" src="<%-doctor[i].imagename%>" alt=""/>
+                    <div class="courses-text">
+                        <h4 class="text-center" style="color: rgb(29, 130, 238);">Psychlologist</h4>
+                        <div class="info text-center">
+                            <span class="text-Blue"><i class="fa fa-user mr-2"></i><%-doctor[i].Name%></span>
+                        </div>
+                        <br>
+                    </div>
+                </a>
+            </div>
+        <%}%>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>

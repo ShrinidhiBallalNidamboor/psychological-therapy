@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+
+<% 
+    console.log('Reports')
+    console.log(reports) 
+%> 
+
+<style>
+  li{
+    margin-bottom: 1rem;
+  }
+</style>
+
+<div class="container">
+    <h1 class="mb-5" style="text-align: center;">Therapy Reports</h1>
+    <div class="container py-5 mt-3">
+      <table class="table table-bordered">
+        <thead>
+          <tr>  
+            <th>Title</th>
+            <th>Doctor</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% reports.forEach(report => { %>
+
+            <tr>
+              <td>
+                <%= report.Title %> 
+              </td>
+              <td>
+                <%= report.DoctorName %> 
+              </td>
+              <td>
+                <a href="/reports?filename=<%= report.Filename %>">Link</a>
+              </td>
+            </tr>
+          <% }) %> 
+        </tbody>
+      </table>
+    </div>
+
+
+</div>
+
+<%- include('partials/footer') %>

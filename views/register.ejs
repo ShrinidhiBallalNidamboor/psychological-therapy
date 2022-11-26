@@ -1,0 +1,57 @@
+<%- include('partials/header') %>  
+    <!-- Team Start -->
+    <form action="/register" method="POST">
+    <main class="login-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header"><b>Register</b></div>
+                        <div class="card-body">
+                            <form action="" method="">
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right"><b>Name</b></label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="name" required autofocus>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right"><b>E-Mail Address</b></label>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" name="username" required autofocus>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right"><b>Password</b></label>
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" name="password" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="text" class="col-md-4 col-form-label text-md-right"><b>Role</b></label>
+                                    <select name="Role" class="col-md-6 form-control">
+                                        <option name="Role" value="Patient">Patient</option>
+                                        <option name="Role" value="Doctor">Doctor</option>
+                                        <option name="Role" value="Student">Student</option>
+                                    </select>
+                                </div>
+    
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Register
+                                    </button>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    </form>
+    <!-- Team End -->
+<%- include('partials/footer') %>  
